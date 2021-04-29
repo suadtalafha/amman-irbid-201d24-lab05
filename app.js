@@ -74,7 +74,7 @@ function sumAndMultiply(a, b, c) {
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4, 7, 5);
+ testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -94,6 +94,19 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   //eslint-disable-line
 
+  let sumAndMultiplyArray2 = [];
+ 
+  let aSumB = sum((sumArr[0]), (sumArr[1]));
+  aSumB = aSumB[0];
+  let aSumbsumc = sum(aSumB, sumArr[2])[0];
+  
+  sumAndMultiplyArray2[0] = aSumbsumc;
+
+  
+  sumAndMultiplyArray2[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`
+  
+  return sumAndMultiplyArray2;
+}
 
 
 
