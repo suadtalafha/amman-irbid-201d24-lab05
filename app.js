@@ -66,7 +66,7 @@ function sumAndMultiply(a, b, c) {
   let finalProduct = multiply(aMultiplyb, c)[0];
   sumAndMultiplyArray[1] = finalProduct;
 
-  sumAndMultiplyArray[2] = `${a} and ${b} and ${c} sum to ${finalSum}.`
+  sumAndMultiplyArray[2] = `${a} and ${b} and ${c} sum to ${aSumbSumc}.`
   sumAndMultiplyArray[3] = `The product of ${a} and ${b} and ${c} is ${finalProduct}.`
 
   return sumAndMultiplyArray;
@@ -103,14 +103,14 @@ function sumArray(sumArr) {
   sumAndMultiplyArray2[0] = aSumbsumc;
 
   
-  sumAndMultiplyArray2[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`
+  sumAndMultiplyArray2[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${aSumbsumc} is their sum.`
   
   return sumAndMultiplyArray2;
 }
 
 
 
-}
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -146,10 +146,10 @@ function multiplyArray(multArr) {
   return sumAndMultiplyArray3;
 }
 
-}
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
