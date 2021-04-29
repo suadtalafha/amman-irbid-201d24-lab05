@@ -131,6 +131,21 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) {
   //eslint-disable-line
+  var sumAndMultiplyArray3= [];
+  
+  var amuLtiB = multiply((multArr[0]), (multArr[1]));
+  amuLtiB =  amuLtiB[0];
+
+  
+  var finalProduct = multiply( amuLtiB, multArr[2]);
+  finalProduct = finalProduct[0];
+  sumAndMultiplyArray3[0] = finalProduct;
+
+  sumAndMultiplyArray3[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`
+ 
+  return sumAndMultiplyArray3;
+}
+
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
