@@ -66,7 +66,7 @@ function sumAndMultiply(a, b, c) {
   let finalProduct = multiply(aMultiplyb, c)[0];
   sumAndMultiplyArray[1] = finalProduct;
 
-  sumAndMultiplyArray[2] = `${a} and ${b} and ${c} sum to ${finalSum}.`
+  sumAndMultiplyArray[2] = `${a} and ${b} and ${c} sum to ${aSumbSumc}.`
   sumAndMultiplyArray[3] = `The product of ${a} and ${b} and ${c} is ${finalProduct}.`
 
   return sumAndMultiplyArray;
@@ -74,7 +74,7 @@ function sumAndMultiply(a, b, c) {
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4, 7, 5);
+ testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -94,10 +94,23 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   //eslint-disable-line
 
+  let sumAndMultiplyArray2 = [];
+ 
+  let aSumB = sum((sumArr[0]), (sumArr[1]));
+  aSumB = aSumB[0];
+  let aSumbsumc = sum(aSumB, sumArr[2])[0];
+  
+  sumAndMultiplyArray2[0] = aSumbsumc;
 
-
-
+  
+  sumAndMultiplyArray2[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${aSumbsumc} is their sum.`
+  
+  return sumAndMultiplyArray2;
 }
+
+
+
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -118,10 +131,25 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) {
   //eslint-disable-line
+  let sumAndMultiplyArray3= [];
+  
+  let amuLtiB = multiply((multArr[0]), (multArr[1]));
+  amuLtiB =  amuLtiB[0];
+
+  
+  let finalProduct = multiply( amuLtiB, multArr[2]);
+  finalProduct = finalProduct[0];
+  sumAndMultiplyArray3[0] = finalProduct;
+
+  sumAndMultiplyArray3[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`
+ 
+  return sumAndMultiplyArray3;
 }
 
+
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
