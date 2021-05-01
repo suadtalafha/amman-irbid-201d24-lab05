@@ -34,7 +34,12 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) {
   //eslint-disable-line
   let multi = a * b;
+
+
+  
   return [multi, `The product of ${a} and ${b} is ${multi}.`]
+
+
 }
 
 // Here is the test for multiply(); uncomment it to run it
